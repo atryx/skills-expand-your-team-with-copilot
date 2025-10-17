@@ -1,0 +1,101 @@
+name: General Feature Request
+description: Request a new feature that doesn't fit other categories
+title: "[Feature]: "
+labels: ["enhancement"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template for feature requests that don't fit into the other specific categories. If you're unsure which template to use, start here!
+  
+  - type: textarea
+    id: feature-summary
+    attributes:
+      label: What do you want to add or change?
+      description: Give a brief summary of the feature you're requesting.
+      placeholder: |
+        Example: Add a calendar view so students can see all activities organized by date and time.
+    validations:
+      required: true
+  
+  - type: textarea
+    id: problem-statement
+    attributes:
+      label: What problem does this solve?
+      description: Explain why this feature is needed and what problem it addresses.
+      placeholder: |
+        Example: Students have trouble finding activities that fit their schedule because the current list view doesn't show when activities meet.
+    validations:
+      required: true
+  
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: How should this work?
+      description: Describe in detail how you envision this feature working.
+      placeholder: |
+        Example:
+        - Add a "Calendar View" button next to the current list view
+        - Show activities in a weekly calendar format
+        - Each activity appears as a card in its time slot
+        - Students can click on activities to see details and sign up
+    validations:
+      required: true
+  
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: How will we know this is complete?
+      description: List specific things that should be true when this feature is finished.
+      placeholder: |
+        - [ ] Calendar view displays activities by day and time
+        - [ ] Students can switch between list and calendar views
+        - [ ] Calendar is easy to read and navigate
+        - [ ] Clicking an activity shows full details
+      value: |
+        - [ ] 
+    validations:
+      required: true
+  
+  - type: textarea
+    id: technical-hints
+    attributes:
+      label: Technical Hints or Suggestions
+      description: |
+        If you have any technical suggestions or know of libraries/tools that might help, list them here.
+        Only fill this out if you have specific technical knowledge to share.
+      placeholder: |
+        Example: There are JavaScript calendar libraries like FullCalendar that might be helpful.
+    validations:
+      required: false
+  
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternative Solutions
+      description: Have you considered any alternative approaches? If so, describe them.
+      placeholder: Instead of a calendar, we could add time filters to the sidebar.
+    validations:
+      required: false
+  
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Constraints or Limitations
+      description: Are there any constraints or limitations to consider?
+      placeholder: |
+        - Should work on mobile phones and tablets
+        - Keep the page loading fast
+        - Must use only HTML, CSS, JavaScript, and Python
+    validations:
+      required: false
+  
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Add any other information, screenshots, or examples that might be helpful.
+      placeholder: Here's a link to a similar feature on another website...
+    validations:
+      required: false

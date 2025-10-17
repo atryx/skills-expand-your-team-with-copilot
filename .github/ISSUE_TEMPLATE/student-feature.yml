@@ -1,0 +1,113 @@
+name: Student Data or Management Feature
+description: Request features related to student signups, data display, or management
+title: "[Student Feature]: "
+labels: ["enhancement", "student-management"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template to request features related to how students sign up, view their information, or manage their activity participation.
+  
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: What feature do you need?
+      description: Describe what you want to add or change about student features.
+      placeholder: |
+        Example: I need students to be able to see all their signed-up activities in one place, like a dashboard or "My Activities" page.
+    validations:
+      required: true
+  
+  - type: textarea
+    id: reason
+    attributes:
+      label: Why is this needed?
+      description: Explain the problem this solves or why this would be helpful.
+      placeholder: |
+        Example: Students currently have to scroll through all activities to remember which ones they signed up for. A dedicated view would make this much easier.
+    validations:
+      required: true
+  
+  - type: dropdown
+    id: feature-type
+    attributes:
+      label: What type of change is this?
+      description: Select the category that best describes this request.
+      options:
+        - Signup or registration improvements
+        - Display or view student data
+        - Student dashboard or profile
+        - Email or notification features
+        - Data validation or requirements
+        - Export or reporting features
+        - Other (explain below)
+    validations:
+      required: true
+  
+  - type: textarea
+    id: detailed-requirements
+    attributes:
+      label: Detailed Requirements
+      description: |
+        Provide specific details about what needs to be implemented:
+        - What data needs to be collected or displayed?
+        - How should students interact with this feature?
+        - What should happen when they use it?
+        - Are there any validations or rules?
+      placeholder: |
+        Example for "My Activities" page:
+        - Add a new page at /my-activities
+        - Students enter their email to view their activities
+        - Show all activities the student is signed up for
+        - Display activity name, day, time, location, and participant count
+        - Allow students to withdraw from an activity
+        - Show a message if student has no activities yet
+    validations:
+      required: true
+  
+  - type: textarea
+    id: user-interaction
+    attributes:
+      label: How should this work from the student's perspective?
+      description: Describe step-by-step what a student would do to use this feature.
+      placeholder: |
+        1. Student clicks "My Activities" button in navigation
+        2. Student enters their email address
+        3. Page shows all activities they're signed up for
+        4. Student can click "Withdraw" to remove themselves from an activity
+    validations:
+      required: true
+  
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: How will we know this is complete?
+      description: List what should be true when this feature is finished.
+      placeholder: |
+        - [ ] Students can view their signed-up activities
+        - [ ] Email validation works correctly
+        - [ ] List updates when student signs up or withdraws
+        - [ ] Appropriate messages show for empty states
+      value: |
+        - [ ] 
+    validations:
+      required: true
+  
+  - type: textarea
+    id: data-privacy
+    attributes:
+      label: Data Privacy Considerations
+      description: Are there any privacy or security concerns to keep in mind?
+      placeholder: Students should only be able to see their own activities, not other students' information.
+    validations:
+      required: false
+  
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Notes
+      description: Any other information that might be helpful.
+      placeholder: This should work on both desktop and mobile devices.
+    validations:
+      required: false

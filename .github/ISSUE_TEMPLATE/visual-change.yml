@@ -1,0 +1,91 @@
+name: Visual or Design Change
+description: Request changes to colors, layout, images, or overall appearance
+title: "[Design]: "
+labels: ["enhancement", "design"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template to request changes to how the website looks. This includes colors, fonts, images, spacing, and layout.
+  
+  - type: textarea
+    id: current-design
+    attributes:
+      label: What currently exists?
+      description: Describe what the website looks like now that you want to change.
+      placeholder: |
+        Example: The website has a blue background, but our school colors are white and lime green.
+    validations:
+      required: true
+  
+  - type: textarea
+    id: desired-design
+    attributes:
+      label: What do you want it to look like?
+      description: Describe in detail what visual changes you want to see.
+      placeholder: |
+        Example: 
+        - Change the background to white
+        - Make headers and buttons lime green (color code: #32CD32)
+        - Add school mascot images from https://octodex.github.com/
+    validations:
+      required: true
+  
+  - type: dropdown
+    id: change-scope
+    attributes:
+      label: What part of the website needs to change?
+      description: Select which area of the website this affects.
+      options:
+        - Entire website (colors, fonts, overall theme)
+        - Header or navigation
+        - Activity cards
+        - Buttons
+        - Background or layout
+        - Images or icons
+        - Other (explain in details below)
+    validations:
+      required: true
+  
+  - type: textarea
+    id: design-details
+    attributes:
+      label: Design Details
+      description: |
+        Provide any specific details that will help implement this change:
+        - Exact color codes (if known)
+        - Links to images or examples
+        - Specific measurements or sizes
+        - Examples from other websites
+      placeholder: |
+        Example:
+        - Lime green color: #32CD32
+        - Mascot images: Use "Octocat" and "Dinotocat" from https://octodex.github.com/
+        - Background: Pure white (#FFFFFF)
+    validations:
+      required: false
+  
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: How will we know this is complete?
+      description: List what should be true when this change is finished.
+      placeholder: |
+        - [ ] Background is white
+        - [ ] All buttons are lime green
+        - [ ] School mascot appears on the page
+        - [ ] Text is still easy to read with new colors
+      value: |
+        - [ ] 
+    validations:
+      required: true
+  
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Notes
+      description: Any other information that might be helpful.
+      placeholder: This change should match our school's branding guidelines.
+    validations:
+      required: false
