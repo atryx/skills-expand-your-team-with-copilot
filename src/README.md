@@ -5,7 +5,11 @@ A web application that allows students to explore extracurricular activities and
 ## Features
 
 ### For Students
-- **Browse Activities**: View all available extracurricular activities with detailed information including description, schedule, maximum capacity, and current enrollment
+- **Browse Activities**: View all available extracurricular activities with detailed information including:
+  - Activity description
+  - Schedule (days and times)
+  - Maximum capacity
+  - Current enrollment
 - **Advanced Filtering**: Filter activities by:
   - Category (Sports, Arts, Academic, Community, Technology)
   - Day of the week (Monday through Sunday)
