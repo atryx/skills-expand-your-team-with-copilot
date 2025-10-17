@@ -75,8 +75,6 @@ body:
         - [ ] Difficulty level appears on activity cards (when set)
         - [ ] Filter in sidebar allows filtering by difficulty
         - [ ] "All Levels" filter option works correctly
-      value: |
-        - [ ] 
     validations:
       required: true
   

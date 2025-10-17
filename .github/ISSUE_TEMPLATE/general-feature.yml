@@ -53,8 +53,6 @@ body:
         - [ ] Students can switch between list and calendar views
         - [ ] Calendar is easy to read and navigate
         - [ ] Clicking an activity shows full details
-      value: |
-        - [ ] 
     validations:
       required: true
   

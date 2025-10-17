@@ -76,8 +76,6 @@ body:
         - [ ] All buttons are lime green
         - [ ] School mascot appears on the page
         - [ ] Text is still easy to read with new colors
-      value: |
-        - [ ] 
     validations:
       required: true
   
