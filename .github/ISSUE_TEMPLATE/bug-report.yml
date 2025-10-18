@@ -1,0 +1,69 @@
+name: Bug Report
+description: Report something that is broken or not working as expected
+title: "[Bug]: "
+labels: ["bug"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this issue! Please fill out the information below to help us understand and fix the problem.
+  
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What is broken?
+      description: Describe what is not working correctly. Be as specific as possible.
+      placeholder: |
+        Example: When I click the "Sign Up" button for Chess Club, nothing happens and I don't get added to the activity.
+    validations:
+      required: true
+  
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: What should happen instead?
+      description: Describe what you expected to happen.
+      placeholder: |
+        Example: After clicking "Sign Up", I should see my name added to the participant list and the count should increase by 1.
+    validations:
+      required: true
+  
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: How can we see this problem?
+      description: Tell us the steps to recreate the issue.
+      placeholder: |
+        1. Open the website
+        2. Find Chess Club in the activities list
+        3. Click the "Sign Up" button
+        4. Notice that nothing happens
+    validations:
+      required: true
+  
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Information
+      description: |
+        Add any other context about the problem here. For example:
+        - Does this happen all the time or only sometimes?
+        - Does it happen with specific activities or all activities?
+        - Are there any error messages shown?
+      placeholder: This happens with all activities, not just Chess Club.
+    validations:
+      required: false
+  
+  - type: checkboxes
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: How will we know this bug is fixed?
+      options:
+        - label: The described functionality works as expected
+          required: true
+        - label: No error messages are shown
+          required: false
+        - label: The fix works in all similar situations
+          required: false

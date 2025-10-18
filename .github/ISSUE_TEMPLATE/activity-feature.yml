@@ -1,0 +1,99 @@
+name: Activity Feature Request
+description: Request new features or changes related to activities (sports, clubs, etc.)
+title: "[Activity Feature]: "
+labels: ["enhancement", "activities"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this template to request new features or changes to how activities work, are displayed, or are managed.
+  
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: What feature do you need?
+      description: Describe what you want to add or change about activities.
+      placeholder: |
+        Example: I need to add difficulty levels to activities so students can see if an activity is for beginners, intermediate, or advanced students.
+    validations:
+      required: true
+  
+  - type: textarea
+    id: reason
+    attributes:
+      label: Why is this needed?
+      description: Explain the problem this solves or why this would be helpful.
+      placeholder: |
+        Example: Currently, freshmen and seniors are in the same activities. Some students want activities that match their skill level.
+    validations:
+      required: true
+  
+  - type: dropdown
+    id: feature-type
+    attributes:
+      label: What type of change is this?
+      description: Select the category that best describes this request.
+      options:
+        - Add new information to activities (like difficulty, category, etc.)
+        - Change how activities are displayed on the page
+        - Add filtering or sorting options
+        - Add search functionality
+        - Change signup or participation features
+        - Add new types of activities
+        - Other (explain below)
+    validations:
+      required: true
+  
+  - type: textarea
+    id: detailed-requirements
+    attributes:
+      label: Detailed Requirements
+      description: |
+        Provide specific details about what needs to be implemented:
+        - What new fields or data are needed?
+        - How should it look on the screen?
+        - Should it be optional or required?
+        - How should it work?
+      placeholder: |
+        Example for difficulty levels:
+        - Add a difficulty field to each activity (Beginner, Intermediate, Advanced)
+        - If no difficulty is set, the activity is for all levels
+        - Show difficulty as a small label on the activity card
+        - Add a filter in the sidebar to filter by difficulty
+        - Include an "All Levels" option that shows activities without a difficulty setting
+    validations:
+      required: true
+  
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: How will we know this is complete?
+      description: List what should be true when this feature is finished.
+      placeholder: |
+        - [ ] Activities can have a difficulty level assigned
+        - [ ] Difficulty level appears on activity cards (when set)
+        - [ ] Filter in sidebar allows filtering by difficulty
+        - [ ] "All Levels" filter option works correctly
+    validations:
+      required: true
+  
+  - type: textarea
+    id: examples
+    attributes:
+      label: Examples or References
+      description: Provide examples of similar features from other websites or applications, if available.
+      placeholder: Similar to how online course platforms show "Beginner" or "Advanced" badges on courses.
+    validations:
+      required: false
+  
+  - type: textarea
+    id: limitations
+    attributes:
+      label: Limitations or Constraints
+      description: Are there any limitations or things to be careful about?
+      placeholder: |
+        - This should not break existing activities that don't have a difficulty level
+        - Keep the design simple and clean
+    validations:
+      required: false
